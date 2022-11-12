@@ -7,11 +7,11 @@ exports.addMsg = async (req,res) => {
         msg.email = req.body.email;
         msg.message = req.body.message
 
-        const saveMsg = await Msj.save();
+        const saveMsg = await msg.save();
 
         return res.redirect('/portfolio')
     
     } catch (error) {
-        
+        return res.redirect('/portfolio')
     }
 }
