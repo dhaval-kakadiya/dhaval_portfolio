@@ -3,6 +3,6 @@ const router = express.Router()
 
 const {portfolio} = require('../controllers/portfolioController')
 
-router.get('/portfolio',portfolio)
+router.get('/',portfolio)
 
 module.exports = router

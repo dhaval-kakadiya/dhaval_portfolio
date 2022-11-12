@@ -9,9 +9,9 @@ exports.addMsg = async (req,res) => {
 
         const saveMsg = await msg.save();
 
-        return res.redirect('/portfolio')
+        return res.redirect('/')
     
     } catch (error) {
-        return res.redirect('/portfolio')
+        return res.redirect('/')
     }
 }
