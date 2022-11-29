@@ -3,6 +3,6 @@ const router = express.Router()
 
 const {addMsg} = require('../controllers/msgController')
 
-router.post('/addmsg',addMsg)
+router.post('/',addMsg)
 
 module.exports = router
